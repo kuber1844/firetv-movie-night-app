@@ -1,16 +1,39 @@
-# React + Vite
+# 🎬 Family Movie Night (Fire TV)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A Fire TV app that ends the "what should we watch?" argument. Each family
+member picks an age group and a mood, and the app recommends titles that
+suit everyone in the room.
 
-Currently, two official plugins are available:
+Built for the Amazon Developer Hackathon, Fire TV track
+(priority categories: family entertainment, AI-enhanced viewing).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Remote-friendly UI: D-pad / arrow-key navigation with clear focus states
+- 10-foot design: large text, high contrast, safe screen margins
+- Family profiles (2-4 people), each with an age group and a mood
+- Recommendations that are age-appropriate for the youngest viewer
+  and match as many moods as possible
 
-## React Compiler
+## Tech stack
+- React + Vite
+- Plain CSS, built for TV screens
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run locally
+```bash
+npm install
+npm run dev
+```
+Open http://localhost:5173 and use the arrow keys, Enter, and Esc/Backspace
+(these act like the Fire TV remote).
 
-## Expanding the Oxlint configuration
+## Controls
+| Key | Fire TV remote |
+|---|---|
+| Arrow keys | D-pad |
+| Enter | Select |
+| Esc / Backspace | Back |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Screens
+1. Home
+2. Who's watching?
+3. Tonight's picks
